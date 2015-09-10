@@ -1,0 +1,66 @@
+{% extends 'nav.html' %}
+
+{% block gallerypage %}style="color: #333; border-bottom: 3px solid #333;"{% endblock %}
+
+{% block filternav %}
+
+{% endblock %}
+
+{% block pagecontent %}
+
+	<div class="mini-nav">
+		<a class="mini current-page">view all</a>
+		<a class="mini">events</a>
+		<a class="mini">short films</a>
+		<a class="mini">music videos</a>
+		<a class="mini">promotions</a>
+		<a class="mini">magic</a>		
+	</div>
+	<div class="gallery">
+		<div class="project-thumb" style="background-image:url('../images/breathingboardwalk.png');">
+			<a class="thumb-cover" href="/projects/breathingboardwalk.html">
+				<div class="thumb-title">Breathing Boardwalk</div>
+				<div class="thumb-view-wrapper">
+					<div class="thumb-view-border">&nbsp;</div><br />
+					<div class="thumb-view">short film</div>
+				</div>
+			</a>
+		</div>
+		<div class="project-thumb" style="background-image:url('../images/doublevision.png');">
+			<a class="thumb-cover" href="/projects/doublevision.html">
+				<div class="thumb-title">Double Vision</div>
+				<div class="thumb-view-wrapper">
+					<div class="thumb-view-border">&nbsp;</div><br />
+					<div class="thumb-view">short film + promotion</div>
+				</div>
+			</a>
+		</div>
+		<div class="project-thumb" style="background-image:url('../images/writersblock.png');">
+			<a class="thumb-cover" href="/projects/writersblock.html">
+				<div class="thumb-title">Writer's Block</div>
+				<div class="thumb-view-wrapper">
+					<div class="thumb-view-border">&nbsp;</div><br />
+					<div class="thumb-view">short film</div>
+				</div>
+			</a>
+		</div>
+		<div class="project-thumb" style="background-image:url('../images/pledge.png');">
+			<a class="thumb-cover" href="/projects/pledge.html">
+				<div class="thumb-title">Pledge</div>
+				<div class="thumb-view-wrapper">
+					<div class="thumb-view-border">&nbsp;</div><br />
+					<div class="thumb-view">music video</div>
+				</div>
+			</a>
+		</div>
+		<div class="project-thumb" style="background-image:url('../images/theaterpromotion.png');">
+			<a class="thumb-cover" href="/projects/theater.html">
+				<div class="thumb-title">Fulvio Della Volta</div>
+				<div class="thumb-view-wrapper">
+					<div class="thumb-view-border">&nbsp;</div><br />
+					<div class="thumb-view">promotion</div>
+				</div>
+			</a>
+		</div>
+	</div>
+{% endblock %}

@@ -1,0 +1,51 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+  {% block splashwrapper %}
+  {% endblock %}
+
+  <div class="bigass-wrapper {% block editwidth %}{% endblock %}">
+
+    <div class="nav-wrapper">
+
+      <div class="nav">
+        <a class="small-block logo" href="/">&nbsp;</a
+        ><div class="nav-links">
+          <div class="nav-link">
+            <a class="large-block" {% block gallerypage %}{% endblock %} href="/gallery.html">film gallery</a>
+          </div
+          ><div class="nav-link">
+            <a class="large-block" {% block aboutpage %}{% endblock %} href="/about.html">about LMVC</a>
+          </div
+          ><div class="nav-link">          
+            <a class="large-block" {% block contactpage %}{% endblock %} href="/contact.html">contact us</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav-sm">
+        <a class="small-block logo" href="/">&nbsp;</a
+        ><div class="nav-links">
+          <div class="nav-link">
+            <a class="large-block" {% block gallerypage %}{% endblock %} href="/gallery.html">gallery</a>
+          </div
+          ><div class="nav-link">
+            <a class="large-block" {% block aboutpage %}{% endblock %} href="/about.html">about</a>
+          </div
+          ><div class="nav-link">          
+            <a class="large-block" {% block contactpage %}{% endblock %} href="/contact.html">contact</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="content-wrapper">
+      {% block pagecontent %}
+      {% endblock %}
+    </div>
+
+  </div>
+
+{% endblock %}

@@ -1,0 +1,51 @@
+{% extends 'nav.html' %}
+
+{% block gallerypage %}style="color: #333; border-bottom: 3px solid #333;"{% endblock %}
+
+{% block editwidth %}full-width{% endblock %}
+
+{% block pagecontent %}
+	<div class="video-wrapper">
+		<div class="video">
+			{% block video %}
+				
+			{% endblock %}
+		</div>
+	</div>
+	<div class="video-info-wrapper">
+		<div class="video-info">
+			<div class="title-bar">
+				<div class="date">
+					{% block date %}
+						
+					{% endblock %}
+				</div>
+				{% block title %}
+					
+				{% endblock %}
+			</div>
+			<div class="description">
+				{% block description %}
+					
+				{% endblock %}
+			</div>
+			<div class="tags"><span>Categorized in </span>
+				{% block tags %}
+					
+				{% endblock %}
+			</div>
+			<div class="prev">
+				<div class="line"></div>
+				<div class="white">&nbsp;</div>
+				<div class="arrow"></div>
+				<div class="word">PREV</div>
+			</div>
+			<div class="next">
+				<div class="line">&nbsp;</div>
+				<div class="white">&nbsp;</div>
+				<div class="arrow">&nbsp;</div>
+				<div class="word">NEXT</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}

@@ -1,8 +1,14 @@
-{% extends 'layout.html' %}
+{% extends 'gallery.html' %}
 
-{% block bodyclass %}home{% endblock %}
-
-
-{% block main %}
-  Hi there.
+{% block splashwrapper %}
+	<div class="splash-wrapper">
+		<div class="splash">
+			<a class="splash-content" href="/gallery.html">
+				<img src="../images/LOGO_white.svg" />
+				<br />Little Moments Video Co.
+			</a>
+		</div>
+		<div class="scroll-down">&nbsp;</div>
+		<div class="extra-space">&nbsp;</div>
+	</div>
 {% endblock %}
